@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportverein Schlatt am Randen</title>
+    <link rel="stylesheet" href="./styles.css">
+
+
+    <!--Cookie Script-->
+    <script src="./js/cookieconsent.js"></script>
+    <link rel="stylesheet" href="./css/cookieconsent.css" media="print" onload="this.media='all'">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); </style>
+
+    <!-- JAVA SCRIPTS -->
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/darkmode.js"></script>
+
+</head>
+<body id="body">
+
+    <label>
+        <input type="checkbox" id="darkmode-checkbox" onclick="darkmode()">
+        <span class="check"></span>
+    </label>
+
+<header id="home">
+
+    <div class="header-wrapper">
+        <img src="./img/svs_logo.png">   
+        <div class="fu-img">
+            <img src="./img/sport/fussball.png">
+        </div>
+        <div class="te-img">
+            <img src="./img/sport/tennis.png">
+        </div>
+        <div class="gy-img">
+            <img src="./img/sport/gymnastic.png">
+        </div>
+        <a class="welcome">Willkommen beim Sportverein Schlatt am Randen</a>     
+    </div>
+</header>
+
+<nav>
+    <div id="toggle"></div>
+    <div class="navbar" id="navbar">
+    <ul>
+        <li><a href="#home" class="active">Start</a></li>
+        <li><a href="#vorstand">Unsere Vorstandschaft</a></li>
+        <li><a href="#" onclick="toggleMenu()">Unsere Abteilungen</a></li>
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <a href="#fussball" class="sub-menu-link">
+                    <img src="./img/sport/fussball.png" width="50px;">
+                    <p>Fußball</p>
+                    <span>></span>
+                </a>
+                <a href="#tennis" class="sub-menu-link">
+                    <img src="./img/sport/tennis.png" width="50px">
+                    <p>Tennis</p>
+                    <span>></span>
+                </a>
+                <a href="#gymnastic" class="sub-menu-link">
+                    <img src="./img/sport/gymnastic.png" width="50px">
+                    <p>Gymnastik / Turnen</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+        <li><a href="#clubheim">Unser Clubheim</a></li>
+        <li><a href="#maps">Lageplan</a></li>
+        <li><a href="#member">Mitgliedschaft</a></li>
+
+        <div class="contact-wrapper">
+        <button class="desktop">
+            <span><ion-icon name="mail"></ion-icon></span>
+            Kontaktieren
+        </button>
+        <button class="mobile">
+            <span><ion-icon name="mail"></ion-icon></span>
+        </button> 
+        </div>
+    </ul>
+    </div>
+</nav>
+
+<div class="content-wrapper" id="content">
+<section id="home" class="sec1">
+    <div class="text"> Aktuelle Neuigkeiten</div>
+    <img src="./img/svs_fussball.png" style="width: 80%">
+</section>
+
+<section id="vorstand" class="sec2">
+    <h1>Smarter lorem ipsum. <small>(could use some more wor/k/ds)</small></h1>
+      <h3>How does it work?</h3>
+      <p>First you need a sentence list that is constructed like a list of string that are <strong>default</strong> and <strong>extra</strong>. The sentence only makes sense with the default words and extras are here to expand the length but don't really change the core meaning of the sentence.</p>
+      <p>Each list has a mininum number of words (the default ones) and the maximum number (default + all the extras). We generate a number between min and mix and then then go through the list and add the words to our result until we have enough words :)</p>
+      <p>Unfortunatly this is not finished but it shows the concept I wanted to achieve. Cheers.</p>
+</section>
+
+<section id="abteilung" class="sec3">
+    <h1>Smarter lorem ipsum. <small>(could use some more wor/k/ds)</small></h1>
+      <h3>How does it work?</h3>
+      <p>First you need a sentence list that is constructed like a list of string that are <strong>default</strong> and <strong>extra</strong>. The sentence only makes sense with the default words and extras are here to expand the length but don't really change the core meaning of the sentence.</p>
+      <p>Each list has a mininum number of words (the default ones) and the maximum number (default + all the extras). We generate a number between min and mix and then then go through the list and add the words to our result until we have enough words :)</p>
+      <p>Unfortunatly this is not finished but it shows the concept I wanted to achieve. Cheers.</p>
+</section>
+
+<section id="clubheim" class="sec4">
+    <h1>Smarter lorem ipsum. <small>(could use some more wor/k/ds)</small></h1>
+      <h3>How does it work?</h3>
+      <p>First you need a sentence list that is constructed like a list of string that are <strong>default</strong> and <strong>extra</strong>. The sentence only makes sense with the default words and extras are here to expand the length but don't really change the core meaning of the sentence.</p>
+      <p>Each list has a mininum number of words (the default ones) and the maximum number (default + all the extras). We generate a number between min and mix and then then go through the list and add the words to our result until we have enough words :)</p>
+      <p>Unfortunatly this is not finished but it shows the concept I wanted to achieve. Cheers.</p>
+</section>
+
+
+<section id="maps" class="sec5">
+    <h1>Smarter lorem ipsum. <small>(could use some more wor/k/ds)</small></h1>
+      <h3>How does it work?</h3>
+      <p>First you need a sentence list that is constructed like a list of string that are <strong>default</strong> and <strong>extra</strong>. The sentence only makes sense with the default words and extras are here to expand the length but don't really change the core meaning of the sentence.</p>
+      <p>Each list has a mininum number of words (the default ones) and the maximum number (default + all the extras). We generate a number between min and mix and then then go through the list and add the words to our result until we have enough words :)</p>
+      <p>Unfortunatly this is not finished but it shows the concept I wanted to achieve. Cheers.</p>
+      <div class="mapouter">
+        <div class="responsive_map">
+            <iframe width="800" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=800&amp;height=400&amp;hl=en&amp;q=Zollstra%C3%9Fe%202%20Schlatt%20am%20Randen+(Aplenblickstadion%20Schlatt%20am%20Randen)&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+        </div>
+       </div>
+</section>
+
+<section id="member" class="sec6">
+    <h1>Smarter lorem ipsum. <small>(could use some more wor/k/ds)</small></h1>
+      <h3>How does it work?</h3>
+      <p>First you need a sentence list that is constructed like a list of string that are <strong>default</strong> and <strong>extra</strong>. The sentence only makes sense with the default words and extras are here to expand the length but don't really change the core meaning of the sentence.</p>
+      <p>Each list has a mininum number of words (the default ones) and the maximum number (default + all the extras). We generate a number between min and mix and then then go through the list and add the words to our result until we have enough words :)</p>
+      <p>Unfortunatly this is not finished but it shows the concept I wanted to achieve. Cheers.</p>
+</section>
+
+<section id="contact" class="sec7">
+    <h1>Smarter lorem ipsum. <small>(could use some more wor/k/ds)</small></h1>
+      <h3>How does it work?</h3>
+      <p>First you need a sentence list that is constructed like a list of string that are <strong>default</strong> and <strong>extra</strong>. The sentence only makes sense with the default words and extras are here to expand the length but don't really change the core meaning of the sentence.</p>
+      <p>Each list has a mininum number of words (the default ones) and the maximum number (default + all the extras). We generate a number between min and mix and then then go through the list and add the words to our result until we have enough words :)</p>
+      <p>Unfortunatly this is not finished but it shows the concept I wanted to achieve. Cheers.</p>
+</section>
+</div>
+
+<div class="footer" id="footer">
+<div class="pre-footer">
+    <div class="pre-footer-logo">
+    <img src="./img/svs_logo.png" id="footer-image">
+    </div>
+</div>
+</div>
+
+
+
+     <!--IONICON Link-->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+     <!--Cookie Configuration-->
+     <script defer src="./js/cookieconsent.js"></script>
+     <script defer src="cookieconsent-init.js"></script>
+</body>
+</html>
